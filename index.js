@@ -1,7 +1,7 @@
 function findMinAndRemove(array) {
     let min = array[0]
     let minIndex = 0
-    for ( i = 0 ; i < array.length ; i++ ) {
+    for ( let i = 0 ; i < array.length ; i++ ) {
         if ( array[i] < min ) {
             min = array[i]
             minIndex = i
@@ -14,7 +14,7 @@ function findMinAndRemove(array) {
 function selectionSort(array) {
     let newMin
     let sortedArr = []
-    while ( array.length != ) {
+    while ( array.length != 0 ) {
         newMin = findMinAndRemove(array)
         sortedArr.push(newMin)
     }
